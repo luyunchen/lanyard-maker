@@ -3,7 +3,7 @@ import qrcode
 import os
 
 from PIL import Image, ImageDraw, ImageFont
-with open ("Paper Size.txt", "r") as file:
+with open("Paper Size.txt", "r", encoding="utf-8") as file:
     content = file.read().strip()
 
 width, height = map(int, content.split(","))
